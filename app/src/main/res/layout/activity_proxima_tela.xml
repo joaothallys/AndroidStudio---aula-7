@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="#FFFFFF"
+        tools:context=".ProximaTelaActivity">
+
+        <Button
+            android:id="@+id/buttonGeradorValores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Gerador de Valores"
+            android:textColor="#1d1d1d"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/buttonCalculadoraNotas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonGeradorValores"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="86dp"
+            android:text="Calculadora de Notas"
+            android:textColor="#1d1d1d"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/buttonInversorPalavras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonCalculadoraNotas"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="115dp"
+            android:text="Inversor de Palavras"
+            android:textColor="#1d1d1d"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/buttonRegistroEvento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonInversorPalavras"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="116dp"
+            android:text="Registro de Evento"
+            android:textColor="#1d1d1d"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonRegistroEvento"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="Voltar"
+            android:textColor="#1d1d1d"
+            android:background="#0000FF"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+

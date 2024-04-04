@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".InversorPalavrasActivity">
+
+    <EditText
+        android:id="@+id/editTextTexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o texto"
+        android:inputType="textMultiLine"
+        android:lines="4" />
+
+    <Button
+        android:id="@+id/buttonInverterTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTexto"
+        android:layout_centerHorizontal="true"
+        android:textColor="#1d1d1d"
+        android:layout_marginTop="20dp"
+        android:text="Inverter Texto" />
+
+    <TextView
+        android:id="@+id/textViewTextoInvertido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonInverterTexto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Texto Invertido:"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTextoInvertido"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#1d1d1d"
+        android:text="Voltar" />
+
+
+</RelativeLayout>

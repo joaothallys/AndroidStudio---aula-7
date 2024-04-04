@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".RegistroEventoActivity">
+
+    <EditText
+        android:id="@+id/editTextEvento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o evento"
+        android:inputType="text" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEvento"
+        android:layout_marginTop="16dp"
+        android:calendarViewShown="false" />
+
+    <Button
+        android:id="@+id/buttonRegistrarEvento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/datePicker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textColor="#1d1d1d"
+        android:text="Registrar Evento" />
+
+    <ListView
+        android:id="@+id/listViewEventos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonRegistrarEvento"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/buttonVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listViewEventos"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textColor="#1d1d1d"
+        android:text="Voltar" />
+
+</RelativeLayout>

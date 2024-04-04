@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".GeradorValoresActivity">
+
+    <EditText
+        android:id="@+id/editTextValorMinimo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Valor Mínimo"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextValorMaximo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextValorMinimo"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Valor Máximo"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/buttonGerarNumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextValorMaximo"
+        android:layout_centerHorizontal="true"
+        android:text="Gerar Número Aleatório"
+        android:textColor="#1d1d1d"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewValorGerado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonGerarNumero"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Valor Gerado: "
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewValorGerado"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:textColor="#1d1d1d"
+        android:text="Voltar" />
+
+</RelativeLayout>

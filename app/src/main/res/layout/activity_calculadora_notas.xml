@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".CalculadoraNotasActivity">
+
+    <EditText
+        android:id="@+id/editTextNota1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nota 1"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextNota2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNota1"
+        android:layout_marginTop="20dp"
+        android:hint="Nota 2"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextPeso1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNota2"
+        android:layout_marginTop="20dp"
+        android:hint="Peso 1 (opcional)"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextPeso2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPeso1"
+        android:layout_marginTop="20dp"
+        android:hint="Peso 2 (opcional)"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/buttonCalcularMediaPonderada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPeso2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Calcular Média Ponderada"
+        android:textColor="#1d1d1d"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonCalcularMediaSimples"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonCalcularMediaPonderada"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Calcular Média Simples"
+        android:textColor="#1d1d1d"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonCalcularMediaSimples"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewResultado"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Voltar"
+        android:textColor="#1d1d1d"
+        android:textSize="20sp" />
+
+</RelativeLayout>
